@@ -15,11 +15,15 @@ export default async function Home({
     const fld_id =
         (searchParams.fld_id && (searchParams.fld_id as string)) || undefined;
     const query = (searchParams.q && (searchParams.q as string)) || undefined;
-        	{query ? (
+
     return (
         <div className="md:my-2">
             	<h1>{SITENAME}</h1><h2>Video Bokep Indo Viral Terbaru</h2>
+        	{query ? (
                 <SearchCardList query={query} banner />
             ) : (
                 <CardList page={page} per_page={per_page} fld_id={fld_id} />
-            )}<p>{SITENAME} merupakan situs website hiburan dewasa 18+ Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral Sma Tante Live Paksa Bokep Abg Jepang Jav Barat Korea China Terbaru
+            )}<p>{SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral Sma Tante Live Paksa Bokep Abg Jepang Jav Barat Korea China Terbaru merupakan situs website hiburan dewasa 18+ nonton video bokep indo yang menyediakan akses ribuan video porno Indonesia terbaru yang bisa anda nikmati secara gratis jadi jangan lupa untuk bookmark ya.</p>
+	</div>
+    );
+}
