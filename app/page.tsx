@@ -18,7 +18,7 @@ export default async function Home({
 
     return (
         <div className="md:my-2">
-            	<h1>{SITENAME}</h1><h2>Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral Sma Tante Live Paksa Bokep Abg Jepang Jav Barat Korea China Terbaru</h2>
+            	<h1>{SITENAME}</h1><p>Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral Sma Tante Live Paksa Bokep Abg Jepang Jav Barat Korea China Terbaru</p>
         	{query ? (
                 <SearchCardList query={query} banner />
             ) : (
