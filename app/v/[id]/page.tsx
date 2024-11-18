@@ -87,7 +87,7 @@ export default async function Video({ params }: PageProps) {
         '@type': 'VideoObject',
         name: `Bokep ${file.title}`,
         thumbnailUrl: file.splash_img,
-        description: `${file.title} di ${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`,
+        description: `Video Bokep {file.title} di {SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`;
         url: `https://bokepkorea.pages.dev/v/${file.filecode}`,
         embedUrl: `https://doodstream.com/e/${file.filecode}`,
         uploadDate: new Date(
@@ -109,18 +109,18 @@ export default async function Video({ params }: PageProps) {
         headline: `Bokep ${file.title}`,
         image: file.splash_img,
         description: `Video Bokep {file.title} di {SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`,
-        url: `https://bokepindobaru.pages.dev/v/${file.filecode}`,
+        url: `https://bokepkorea.pages.dev/v/${file.filecode}`,
         datePublished: new Date(
             file.uploaded + ".000Z"
         ).toISOString(),
         publisher: {
             '@type': 'Organization',
             name: `${SITENAME}`,
-            logo: 'https://bokepindobaru.pages.dev/favicon.ico'},
+            logo: 'https://bokepkorea.pages.dev/favicon.ico'},
             author: {
                 '@type': 'Person',
                 name: 'admin',
-                url: 'https://bokepindobaru.pages.dev'
+                url: 'https://bokepkorea.pages.dev'
               }
         }
         
