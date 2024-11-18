@@ -40,7 +40,7 @@ export async function generateMetadata(
     }
 
     const file = data.result[0];
-    const title = `Bokep ${file.title} - ${SITENAME}`;
+    const title = `Bokep ${file.title}`;
     const description = `Video Bokep {file.title} di {SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`;
     const image = file.splash_img;
     const previousOgImages = (await parent).openGraph?.images || [];
@@ -85,7 +85,7 @@ export default async function Video({ params }: PageProps) {
 	const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'VideoObject',
-        name: `${file.title} - ${SITENAME}`,
+        name: `Bokep ${file.title}`,
         thumbnailUrl: file.splash_img,
         description: `${file.title} di ${SITENAME} Video Bokep Indo Jepang Jav Barat Simontok Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`,
         url: `https://bokepkorea.pages.dev/v/${file.filecode}`,
@@ -106,7 +106,7 @@ export default async function Video({ params }: PageProps) {
         const jsonLd2 = {
         '@context': 'https://schema.org',
         '@type': 'Article',
-        headline: `Bokep ${file.title} - ${SITENAME}`,
+        headline: `Bokep ${file.title}`,
         image: file.splash_img,
         description: `Video Bokep {file.title} di {SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`,
         url: `https://bokepindobaru.pages.dev/v/${file.filecode}`,
