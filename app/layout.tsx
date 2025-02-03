@@ -46,17 +46,6 @@ export default function RootLayout({
             },
             "foundingDate":"2024-10-27"
         }
-        const jsonLd1 = {
-            "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": `${SITENAME}`,
-        "url": "https://bokepkorea.pages.dev",
-        "description": `${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral Sma Tante Live Paksa Bokep Abg Jepang Jav Barat Korea China Terbaru`,
-        "image": "https://bokepkorea.pages.dev/favicon.ico",
-        "potentialAction":{
-            "@type":"ReadAction",
-            "target":"https://bokepkorea.pages.dev"}
-        }
         const jsonLd2 = {
             "@context": "https://schema.org",
         "@type": "WebSite",
@@ -80,10 +69,6 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd1) }}
         />
         <script
           type="application/ld+json"
