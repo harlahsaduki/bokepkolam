@@ -84,13 +84,12 @@ export default async function Video({ params }: PageProps) {
     const file = data.result[0];
 	const jsonLd = {
         '@context': 'https://schema.org',
-        '@type': 'VideoObject',
+        '@type': 'WebPage',
         name: `Bokep ${file.title}`,
-        thumbnailUrl: file.splash_img,
-        description: `Video Bokep {file.title} di {SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`,
+        image: file.splash_img,
+        description: `Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`,
         url: `https://bokepkorea.pages.dev/v/${file.filecode}`,
-        embedUrl: `https://doodstream.com/e/${file.filecode}`,
-        uploadDate: new Date(
+        datePublished: new Date(
             file.uploaded + ".000Z"
         ).toISOString(),
         publisher: {
@@ -108,7 +107,7 @@ export default async function Video({ params }: PageProps) {
         '@type': 'Article',
         headline: `Bokep ${file.title}`,
         image: file.splash_img,
-        description: `Video Bokep {file.title} di {SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`,
+        description: `Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`,
         url: `https://bokepkorea.pages.dev/v/${file.filecode}`,
         datePublished: new Date(
             file.uploaded + ".000Z"
@@ -125,7 +124,16 @@ export default async function Video({ params }: PageProps) {
         }
         
     return (
-        <div className="grid col-span-full gap-4 md:gap-4 md:mx-10">
+        <div className="grid col-span-full gap-4 md:gap-4 md:mx-10" itemProp="video" itemScope itemType="http://schema.org/VideoObject">
+<meta itemProp="author" content="admin" />
+<meta itemProp="name" content={`Bokep ${file.title}`} />
+<meta itemProp="description" content={`Video Bokep ${file.title} di ${SITENAME} Video Bokep Indo Bocil Ngentot Jilbab Smp Mama Viral`} />
+<meta itemProp="duration" content={`${file.length}`} />
+<meta itemProp="thumbnailUrl" content={`${file.splash_img}`} />
+<meta itemProp="embedURL" content={`https://doodstream.com/e/${file.filecode}`} />
+<meta itemProp="uploadDate" content={`${new Date(
+            file.uploaded + ".000Z"
+        ).toISOString()}`} />
         <section>
         {/* Add JSON-LD to your page */}
         <script
